@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="mydbbest@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.4">
+    <root id="1"/>
+    <schema id="2" parent="1" name="mydbbest">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="information_schema"/>
+    <schema id="4" parent="1" name="mysql"/>
+    <schema id="5" parent="1" name="performance_schema"/>
+    <schema id="6" parent="1" name="sys"/>
+    <schema id="7" parent="1" name="test"/>
+    <table id="8" parent="2" name="company"/>
+    <table id="9" parent="2" name="statistic"/>
+    <column id="10" parent="8" name="idCompany">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="11" parent="8" name="Companycol">
+      <Position>2</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <key id="12" parent="8" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>idCompany</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="13" parent="9" name="idStatistic">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="14" parent="9" name="Date">
+      <Position>2</Position>
+      <DataType>date|0</DataType>
+    </column>
+    <column id="15" parent="9" name="Open">
+      <Position>3</Position>
+      <DataType>float|0</DataType>
+    </column>
+    <column id="16" parent="9" name="High">
+      <Position>4</Position>
+      <DataType>float|0</DataType>
+    </column>
+    <column id="17" parent="9" name="Low">
+      <Position>5</Position>
+      <DataType>float|0</DataType>
+    </column>
+    <column id="18" parent="9" name="Close">
+      <Position>6</Position>
+      <DataType>float|0</DataType>
+    </column>
+    <column id="19" parent="9" name="Adj Close">
+      <Position>7</Position>
+      <DataType>float|0</DataType>
+    </column>
+    <column id="20" parent="9" name="Volume">
+      <Position>8</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="21" parent="9" name="Dividend">
+      <Position>9</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+  </database-model>
+</dataSource>
